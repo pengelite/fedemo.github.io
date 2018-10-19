@@ -1,0 +1,98 @@
+# Site settings
+title: Peng's Blog  #你博客的标题
+SEOTitle: Peng的博客 | Peng's Blog  #显示在浏览器上搜索的时候显示的标题
+header-img: img/post-bg-earth.jpg #显示在首页的背景图片
+email: pengelite@126.com
+description: "Hello，我是Peng，一只程序员，这是我的blog，我会慢慢把它丰富起来的。" #网站介绍
+keyword: "Peng,Peng's Blog,Peng的博客,JAVA,pengelite" #关键词
+url: "https://www.pengelite.cn"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/pengelite/pengelite.github.io.git" # you code repository
+
+# Sidebar settings侧边栏
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "多冷的隆冬啊!"
+sidebar-avatar: /img/avatar_g.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings社交账号
+RSS: false
+weibo_username:    15137012531
+zhihu_username:    z.p.wang
+github_username:    pengelite
+facebook_username:  pengelite
+instagram_username: pengelite
+twitter_username:  pengelite
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+# 评论系统
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 'bb72de80b6bbeaeff373'    #生成的clientID
+  clientSecret: '871e3ecde00c585cc2808135b9c8a71acd3c048b'   #同上
+  repo: img_gitalk    #仓库名称
+  owner: PengElite    #github用户名
+  admin: PengElite
+
+
+
+
+# Analytics settings 百度统计track_id
+# Baidu Analytics
+ba_track_id: f23c101d1ebd386a73baafa6a64a1f0b
+
+
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+#search plugins
+search: true                            # 是否使用搜索插件
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends好友链接
+friends: [
+   {
+        title: "Fe",
+        href: "https://fedemo.top/"
+    }
+]
